@@ -1,10 +1,15 @@
-﻿# PhantomClaw Releases
+# PhantomClaw Releases
 
 ⚠️ ALPHA SOFTWARE — NOT FOR PRODUCTION USE
 
-This is an early alpha release. Expect bugs, missing features, and breaking changes. Do not use with sensitive or personal data. Use at your own risk.
+This repository contains **release assets only** (compiled binaries, distributions).  
+Source code, documentation, and issue tracking are hosted in the main repository:
 
+👉 [PhantomGames52/phantomclaw](https://github.com/PhantomGames52/phantomclaw)
 
-Бинарные релизы PhantomClaw.
+Binary releases are published as GitHub Releases and attached to tags.  
+The `main` branch is intentionally kept minimal.
 
+---
 
+**Current release:** v0.0.1-alpha (see [Releases page](https://github.com/PhantomGames52/phantomclaw-releases/releases)).

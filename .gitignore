@@ -1,0 +1,7 @@
+# Releases repo — keep main clean
+*.zip
+*.tar.gz
+*.exe
+*.dmg
+*.AppImage
+*.msi
