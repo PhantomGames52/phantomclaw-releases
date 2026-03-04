@@ -35,7 +35,7 @@ Prerequisites: Node.js 20+ and npm.
    ```
    - Gateway: `ws://localhost:18790`
    - Web UI: `http://localhost:5173`
-   (Alternatively, run `phantomclaw gateway start` and `npm run dev` in `webui/` separately.)
+   (Note: `start` should be run from the extracted project folder containing `gateway/` and `webui/`. Alternatively, run `phantomclaw gateway start` and `npm run dev` in `webui/` separately.)
 
 ## Update
 
