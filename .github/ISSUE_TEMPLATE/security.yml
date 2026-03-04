@@ -1,0 +1,26 @@
+name: Security vulnerability
+description: Report a security issue in a release asset
+title: "[SECURITY] "
+labels: ["security", "triage"]
+body:
+  - type: input
+    attributes:
+      label: Affected release
+      description: Which release tag/version is affected?
+      placeholder: "v0.0.1-alpha"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe the vulnerability and its impact.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce (if applicable)
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: false
