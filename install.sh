@@ -3,9 +3,9 @@ set -euo pipefail
 
 # PhantomClaw one-command installer
 # Usage: curl -fsSL https://raw.githubusercontent.com/PhantomGames52/phantomclaw-releases/main/install.sh | bash -s -- [version]
-# Default version: v0.0.1-alpha
+# Default version: v1.0.0-alpha
 
-VERSION="${1:-v0.0.1-alpha}"
+VERSION="${1:-v1.0.0-alpha}"
 REPO="PhantomGames52/phantomclaw-releases"
 ASSET="phantomclaw-${VERSION}.zip"
 URL="https://github.com/${REPO}/releases/download/${VERSION}/${ASSET}"
@@ -32,12 +32,12 @@ fi
 # Symlink to bin
 BIN_DIR="${HOME}/.local/bin"
 mkdir -p "$BIN_DIR"
-if [ ! -e "${BIN_DIR}/openclaw" ]; then
-  ln -s "${INSTALL_DIR}/dist/index.js" "${BIN_DIR}/openclaw"
-  echo "Linked openclaw to ${BIN_DIR}/openclaw"
+if [ ! -e "${BIN_DIR}/phantomclaw" ]; then
+  ln -s "${INSTALL_DIR}/dist/index.js" "${BIN_DIR}/phantomclaw"
+  echo "Linked phantomclaw to ${BIN_DIR}/phantomclaw"
 else
-  echo "openclaw already linked; updating..."
-  ln -sf "${INSTALL_DIR}/dist/index.js" "${BIN_DIR}/openclaw"
+  echo "phantomclaw already linked; updating..."
+  ln -sf "${INSTALL_DIR}/dist/index.js" "${BIN_DIR}/phantomclaw"
 fi
 
 # Warn if not in PATH
@@ -46,4 +46,4 @@ if [[ ":$PATH:" != *":${BIN_DIR}:"* ]]; then
   echo '  export PATH="$HOME/.local/bin:$PATH"'
 fi
 
-echo "PhantomClaw ${VERSION} installed. Run: openclaw --help"
+echo "PhantomClaw ${VERSION} installed. Run: phantomclaw --help"
