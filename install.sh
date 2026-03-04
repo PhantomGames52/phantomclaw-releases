@@ -3,9 +3,9 @@ set -euo pipefail
 
 # PhantomClaw one-command installer
 # Usage: curl -fsSL https://raw.githubusercontent.com/PhantomGames52/phantomclaw-releases/main/install.sh | bash -s -- [version]
-# Default version: v1.0.0-alpha
+# Default version: v0.0.1-alpha
 
-VERSION="${1:-v1.0.0-alpha}"
+VERSION="${1:-v0.0.1-alpha}"
 REPO="PhantomGames52/phantomclaw-releases"
 ASSET="phantomclaw-${VERSION}.zip"
 URL="https://github.com/${REPO}/releases/download/${VERSION}/${ASSET}"

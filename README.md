@@ -17,7 +17,7 @@ Prerequisites: Node.js 20+ and npm.
 1. Download the latest release archive from the [Releases page](https://github.com/PhantomGames52/phantomclaw-releases/releases).
 2. Extract it:
    ```bash
-   unzip phantomclaw-v1.0.0-alpha.zip -d phantomclaw
+   unzip phantomclaw-v0.0.1-alpha.zip -d phantomclaw
    ```
 3. Install the CLI globally (from the extracted folder):
    ```bash
