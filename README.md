@@ -3,9 +3,7 @@
 ⚠️ ALPHA SOFTWARE — NOT FOR PRODUCTION USE
 
 This repository contains **release assets only** (compiled binaries, distributions).  
-Source code, documentation, and issue tracking are hosted in the main repository:
-
-👉 [PhantomGames52/phantomclaw](https://github.com/PhantomGames52/phantomclaw)
+Source code, documentation, and issue tracking are hosted in a separate repository (not linked here to avoid exposing private repositories).
 
 Binary releases are published as GitHub Releases and attached to tags.  
 The `main` branch is intentionally kept minimal.
