@@ -29,17 +29,13 @@ Prerequisites: Node.js 20+ and npm.
    ```bash
    phantomclaw --version
    ```
-5. Start the Gateway:
+5. Start all services (Gateway + WebUI) from the project root:
    ```bash
-   phantomclaw gateway start
+   phantomclaw start
    ```
-   The Gateway listens on `ws://localhost:18790` by default.
-6. In another terminal, start the Web UI development server:
-   ```bash
-   cd webui
-   npm run dev
-   ```
-   Then open your browser to `http://localhost:5173`.
+   - Gateway: `ws://localhost:18790`
+   - Web UI: `http://localhost:5173`
+   (Alternatively, run `phantomclaw gateway start` and `npm run dev` in `webui/` separately.)
 
 ## Update
 
@@ -63,6 +59,7 @@ It will download the latest release, extract, and install globally.
 
 ## CLI Reference
 
+- `phantomclaw start` — start Gateway and Web UI together
 - `phantomclaw gateway start` — start the Gateway server
 - `phantomclaw gateway status` — check Gateway status
 - `phantomclaw agent list` — list available skills/agents
