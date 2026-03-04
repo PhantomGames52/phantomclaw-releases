@@ -33,6 +33,7 @@ Prerequisites: Node.js 20+ and npm.
    ```bash
    phantomclaw gateway start
    ```
+   The Gateway listens on `ws://localhost:18790` by default.
 6. In another terminal, start the Web UI development server:
    ```bash
    cd webui
