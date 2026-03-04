@@ -33,7 +33,12 @@ Prerequisites: Node.js 20+ and npm.
    ```bash
    phantomclaw gateway start
    ```
-6. Open Web UI: `http://localhost:8080` (or the port shown by `phantomclaw gateway status`).
+6. In another terminal, start the Web UI development server:
+   ```bash
+   cd webui
+   npm run dev
+   ```
+   Then open your browser to `http://localhost:5173`.
 
 ## Update
 
